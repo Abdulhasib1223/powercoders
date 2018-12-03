@@ -1,5 +1,14 @@
-
-
+p.warning {
+  background-color: red;
+  color: white;
+  font-style: bold;
+  padding: .5px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+p.warning::before{
+  content: "WARNING!: "
+}
 
 
 p em {
