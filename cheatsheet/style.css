@@ -1,0 +1,64 @@
+body {
+  margin: .5em;
+  font-family: 'Slabo 27px', serif;
+
+}
+
+
+h1, h2, h3 {
+  background-color: rgb(15, 55, 131);
+  padding: 5px;
+  color: rgb(238, 229, 229);
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+  font-family: 'Overpass Mono', monospace;
+}
+
+h3 {
+  font-family: 'Overpass Mono', monospace;
+}
+
+code {
+  color: rgb(131, 15, 15);
+}
+
+dl.example dt {
+  font-style: italic;
+  font-weight: bold;
+
+}
+
+span.selector {
+  color: rgb(242, 106, 87);
+}
+
+span.property {
+  color: rgb(247, 236, 235);
+}
+
+span.rgb {
+  color:rgb(70, 199, 199);
+}
+
+span.value {
+  color: rgb(245, 169, 56);
+}
+
+span.class {
+  color: rgb(245, 169, 56);
+}
+
+span.id {
+  color: rgb(98, 189, 240)
+}
+
+pre.coding {
+  background-color: rgb(64, 64, 66);
+  color: rgb(235, 225, 226);
+}

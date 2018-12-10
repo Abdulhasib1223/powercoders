@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Git</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Roboto+Condensed|Slabo+27px" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Git and GitHub Cheatsheet</h1>
+    <h2>Git is a Version Control System (VCS).</h2>
+    <ul>
+      <li>Lets us take a collection of files and save their current contents</li>
+      <li>Saving is called "committing" the changes
+
+        <ul>
+          <li>When we commit the changes we can provide a message that explains why</li>
+        </ul>
+      </li>
+
+      <li>Then we can make changes to the files and:
+        <ul>
+          <li>See what's changed (diff)</li>
+          <li>Easily undo the changes (or some of them)</li>
+          <li>Or commit these as new versions of the files</li>
+        </ul>
+      </li>
+      <li>Over time this builds up a timeline of changes to the files</li>
+    </ul>
+
+    <p>Git has 3 location.</p>
+    <ul>
+      <li>Working Directory</li>
+      <li>Index</li>
+      <li>Repository</li>
+    </ul>
+
+    <p>Git commands copy files between these location.</p>
+    <h3>Git Workflow</h3>
+
+    <pre>
+              <strong>Working directory</strong>
+                    &darr;&uarr;
+                git diff ...
+                    &darr;
+                git add ...
+                    &darr;
+                  <strong>Index</strong>
+                    &darr;
+                git commit ...
+                    &darr;
+                <strong>Repository</strong>
+
+    </pre>
+
+    <ol>
+      <li>Edit one or more files to make your change</li>
+      <li>Copy the files to the index, with git add</li>
+      <li>Review the changes in the index
+        <ul>
+          <li>Double check everything is included</li>
+          <li>Remove files not related to this change</li>
+        </ul>
+      </li>
+      <li>Move the files from the index to the repository, with git commit</li>
+    </ol>
+
+    <h3>git config</h3>
+    <ul>
+      <li>Configure the git User name and user E-mail.</li>
+      <li><code>% git config --global user.email@powercoders.org</code>
+      <li><code>% git config --global user.name
+      </code></li></li>
+    </ul>
+
+    <h3>git init</h3>
+    <ul>
+      <li>Tell Git where the root of the Repository is.</li>
+      <li><code>%.....poco&gt;git init</code></li>
+      <li>Now everything in the poco folder can be managed by git</li>
+    </ul>
+
+    <h3>git status</h3>
+    <ul>
+      <li>Lists all tracking files to be commited</li>
+      <li><code>%git status</code></li>
+    </ul>
+
+    <h3>git add</h3>
+    <ul>
+      <li>git add will add the files to index.</li>
+      <li><code>%git add file-name</code> to add single file</li>
+      <li><code>%git add file1.ext file2.ext file3.ext</code> to add multiple files</li>
+      <li><code>%git add .</code> to add all the files in the given folder.</li>
+    </ul>
+
+    <h3>git rm</h3>
+    <ul>
+      <li>git rm will remove the file from index.</li>
+      <li><code>%git rm --cached file</code></li>
+    </ul>
+
+    <h3>git commit</h3>
+    <ul>
+      <li>git commit will move the files from the index to repository.</li>
+      <li><code>%git commit -m "message"</code></li>
+    </ul>
+
+    <h3>git log</h3>
+    <ul>
+      <li>Display commit logs.</li>
+      <li><code>%git log</code></li>
+    </ul>
+
+    <h3>git diff</h3>
+    <ul>
+      <li>This shows the difference between what's in the working directory and
+        what's in the index (or repository).</li>
+      <li>%git diff</li>
+      <li><code>git diff --cached</code>  (or --staged) displays the between the file in index and repository</li>
+    </ul>
+    <h3>git mv</h3>
+    <ul>
+      <li><code>%git mv old-name new-name</code> to rename the filesb.</li>
+      <li>Don't forget to commit the changes</li>
+    </ul>
+
+    <h3>git rm file-name</h3>
+    <ul>
+      <li><code>%git mv file-name</code> to remove the files.</li>
+      <li>Don't forget to commit the changes</li>
+    </ul>
+
+    <h2>Distributed version control (DVCS)</h2>
+    <ul>
+      <li>Mechanism for sharing
+        <ul>
+          <li>VCS repository</li>
+          <li>Proposed changes to those repositories</li>
+        </ul>
+      </li>
+
+      <li>GitHub, GitLab, BitBucket, …</li>
+    </ul>
+
+    <h3>GitHub steps</h3>
+    <ul>
+      <li>Create a GitHub account</li>
+      <li>Create a repository at GitHub</li>
+      <li>Configure your local repository to sync to GitHub repository</li>
+      <li>Push commits to GitHub</li>
+      <li>View commits on GitHub</li>
+      <li>Leave comments on GitHub</li>
+    </ul>
+
+    <h3>Configure your local repository to sync</h3>
+    <ul>
+      <li>Other copies of your repository are called remotes</li>
+      <li>Find your GitHub repository URL
+        <ul>
+          <li>Looks like <code>https://github.com/user/poco-yourname.git</code></li>
+        </ul>
+      </li>
+
+      <li><code>%git remote add origin https://github.com/user/poco-yourname.git</code></li>
+      <li><code>%git remote -v</code> to view configured remotes</li>
+    </ul>
+
+
+    <h3>git push</h3>
+    <ul>
+      <li><code>%git push</code> to send the changes to GitHub.</li>
+      <li>Run for 1st time: <code>%git push -u origin master</code> </li>
+      <li>Later: <code>%git push</code></li>
+    </ul>
+  </body>
+</html>

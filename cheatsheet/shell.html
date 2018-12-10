@@ -1,44 +1,97 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Shell Cheatsheet</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Roboto+Condensed|Slabo+27px" rel="stylesheet">
+  </head>
 
-<head>
+  <body>
+    <h1>Shell Cheatsheet:</h1>
+    <ul>
+      <li>Machine is a physical computer and hardware (disks, keyboard, etc).</li>
+      <li>Runs an <em>operating system</em>, which manages access to everything.</li>
+      <li>You interact with the OS through the <em>Shell</em>.</li>
+      <li>You use the shell to tell the Operating System which programs to run,it runs them.</li>
+      <li>The shell is just another program.</li>
+      <li>Two types of Shell:
+        <ul>
+          <li>Graphical</li>
+          <li>Command line</li>
+        </ul>
+      </li>
+    </ul>
 
-  <title>Shell cheatsheet</title>
-</head>
+    <p>To open Command line:</p>
+    <ul>
+      <li>Windows: Window key + <strong>cmd</strong></li>
+      <li>OSX:Command Key + <strong>Space</strong>, type <strong>terminal</strong></li>
+    </ul>
 
-<body>
-  <h1>Shell cheatsheet</h1>
-  <hr>
+    <h2>Anatomy of the command line:</h2>
+    <pre>
 
-  <table border="2mx">
-
-    <tr>
-      <th>action</th>
-      <th>windows</th>
-      <th>osx</th>
-    </tr>
-
-    <tr><td>Print working directory</td></tr>
-    <tr><td>Change to a subdirectory</td></tr>
-    <tr><td>Go up a directory</td></tr>
-    <tr><td>Create a directory</td></tr>
-    <tr><td>Delete a directory</td></tr>
-
-  </table>
-
-
-
-
-
-
-
-</body>
-
-
-
-
-
-
+                         Option
+                           |
+      C:\Users\abdul&gt; dir \w *.png
+              |        |        |
+            Prompt  Command  Argument
+      _______________________________________________
+                         Option
+                           |
+      macbook:~ abdul$ ls -l *.png
+              |        |        |
+            Prompt  Command  Argument
 
 
+    </pre>
+
+    <h2>Shell Command line:</h2>
+    <p>Also called the:</p>
+    <ul>
+      <li>Terminal</li>
+      <li>command Window</li>
+      <li>Command Prompt</li>
+      <li>Command line interface(CLI)</li>
+    </ul>
+
+    <h2>Example:</h2>
+    <table border="1">
+      <tr>
+        <th>Action</th>
+        <th>Windows</th>
+        <th>OSX</th>
+      </tr>
+      <tr>
+        <td>Print working directory</td>
+        <td>cd</td>
+        <td>pwd</td>
+      </tr>
+      <tr>
+        <td>List directory contents</td>
+        <td>dir</td>
+        <td>ls</td>
+      </tr>
+      <tr>
+        <td>Change to a subdirectory</td>
+        <td>cd dir</td>
+        <td>cd dir</td>
+      </tr>
+      <tr>
+        <td>Go up a directory</td>
+        <td>cd..</td>
+        <td>cd..</td>
+      </tr>
+      <tr>
+        <td>Create directory</td>
+        <td>mkdir dir</td>
+        <td>mkdir dir</td>
+      </tr>
+      <tr>
+        <td>Delete a directory</td>
+        <td>rmdir dir</td>
+        <td>rmdir dir</td>
+      </tr>
+    </table>
+  </body>
 </html>
