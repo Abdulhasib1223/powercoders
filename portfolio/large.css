@@ -1,0 +1,12 @@
+body {
+  max-width: 960px;
+}
+
+#sport {
+  display: inline;
+  width: 400px;
+}
+
+#my-pic {
+  display: none;
+}
