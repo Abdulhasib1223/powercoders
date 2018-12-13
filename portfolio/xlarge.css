@@ -1,14 +1,15 @@
 body {
-  max-width: 960px;
+  max-width: 1200px;
 }
 #my-pic {
-  position: absolute;
   top: 100px;
-  left: 750px;
+  left: 1000px;
   display: inline;
   width: 200px;
+  position: absolute;
   border-radius: 15px;
   border: 2px solid black;
+
 }
 
 #sport {
