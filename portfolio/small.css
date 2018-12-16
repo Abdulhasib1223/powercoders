@@ -4,8 +4,8 @@
 
 #sport {
   position: absolute;
-  top: 135px;
-  right: 1%;
+  left: 690px;
+  top: 200px;
   border-radius: 15px;
   border: 2px solid black;
 	width: 150px;
@@ -15,9 +15,111 @@
 div {
   border: 1px solid rgba(15, 15, 15, 1);
   padding: 1em;
+  font-style: italic;
+  /*color: blue;*/ body
 }
 
-div.main {
-  padding: .5em;
-  margin: .5em;
+#header {
+  border: solid 1px;
+  padding: 1em;
+}
+
+#my-pic {
+  /*position: absolute;
+  top: 135px;
+  right: 1%;
+  border-radius: 15px;
+  border: 2px solid black;
+	width: 100px;
+  height: 200px; */
+}
+
+body {
+  width: 900px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  background-color: dimgray;
+  color: white;
+  font-style: italic;
+}
+
+h2 {
+  margin-left:.3em;
+  background-color: lightgrey;
+  color: dimgray;
+  font-style: oblique;
+}
+
+#personal {
+  border: 1px groove dimgray;
+  box-shadow: 2px 4px gray;
+  width: auto;
+}
+
+#education {
+  border: 1px groove dimgray;
+  box-shadow: 2px 4px gray;
+  width: auto;
+}
+
+#background {
+  border: 1px groove dimgray;
+  box-shadow: 2px 4px gray;
+  width: auto;
+}
+
+#languages {
+  border: 1px groove dimgray;
+  box-shadow: 2px 4px gray;
+  width: auto;
+}
+
+#experiences {
+  border: 1px groove dimgray;
+  box-shadow: 2px 4px gray;
+  width: auto;
+}
+
+#skills {
+  border: 1px groove dimgray;
+  box-shadow: 2px 4px gray;
+  width: auto;
+}
+
+#hobbies {
+  border: 1px groove dimgray;
+  box-shadow: 2px 4px gray;
+  width: auto;
+}
+
+#referens {
+  border: 1px groove dimgray;
+  box-shadow: 2px 4px gray;
+  width: auto;
+}
+
+#strucure {
+  border: 1px groove dimgray;
+  box-shadow: 2px 4px gray;
+  width: auto;
+}
+
+.img img {
+  width: 40px;
+  height:20px;
+  padding-right: 1px;
+}
+
+.img1 img {
+  width: 60px;
+  height:20px;
+}
+
+.img2 img {
+  width: 30px;
+  height:20px;
 }

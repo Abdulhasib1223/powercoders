@@ -1,10 +1,10 @@
 body {
-  max-width: 960px;
-}
+  /*max-width: 960px;
+}*/
 #my-pic {
   position: absolute;
-  top: 100px;
-  left: 750px;
+  top: 195px;
+  left: 730px;
   display: inline;
   width: 200px;
   border-radius: 15px;
@@ -13,8 +13,4 @@ body {
 
 #sport {
   display: none;
-}
-
-div {
-  border: 1px solid rgba(15, 15, 15, 1);
 }
