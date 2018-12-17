@@ -1,11 +1,37 @@
-#Ingredients,#method
- {
-font-family: 'Merriweather', serif;
-color: blue;
+ h1, h2 {
+  color: green;
 }
-h1{
+
+h1 {
   font-family: 'Playfair Display', serif;
+  text-align: center;
 }
-h2{
+
+h2 {
   font-family: 'Roboto Slab', serif;
+}
+
+span.show {
+    display: inline-block;
+    width: 1em;
+}
+
+span.hide {
+    display: none;
+}
+
+ul.show {
+    display: block;
+}
+
+ul.hide {
+    display: none;
+}
+
+#main {
+  margin: 0, auto;
+  width: 40em;
+  border: 10px solid rgba(194, 104, 21, 0.84);
+  border-radius: 3%;
+  padding: 30px;
 }
