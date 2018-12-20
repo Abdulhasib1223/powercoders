@@ -17,4 +17,4 @@ document.addEventListener('DOMContentLoaded', function (event){
     normal.addEventListener('click', function (event) {
         setClass(event,'');
     });
-});jhgjhgjhg
+});
