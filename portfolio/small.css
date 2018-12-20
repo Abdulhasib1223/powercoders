@@ -39,6 +39,7 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  font-size: 110%;
 }
 
 h1 {
@@ -108,18 +109,61 @@ h2 {
   width: auto;
 }
 
+.somename1 {
+  width: 30px;
+  height:20px;
+  padding-right: 1px;
+}
+
+.somename2 {
+  width: 30px;
+  height:20px;
+  margin-left: 0em;
+}
+
+.somename3 {
+  width: 30px;
+  height:20px;
+}
+/*
 .img img {
-  width: 40px;
+  width: 30px;
   height:20px;
   padding-right: 1px;
 }
 
 .img1 img {
-  width: 60px;
+  width: 30px;
   height:20px;
+  margin-left: 0em;
 }
 
 .img2 img {
   width: 30px;
   height:20px;
+}
+*/
+
+a {
+  color: black;
+}
+
+#main {
+  border: none;
+}
+
+#strucure p {
+  padding-left: 1em;
+}
+
+#referens p {
+  padding-left: 1em;
+}
+
+#hobbies p {
+  padding-left: 1em;
+}
+
+h1, h2 {
+paddin: 4em. 6em;
 }

@@ -1,0 +1,48 @@
+.somename1, .somename2, .somename3 {
+  display: none;
+}
+
+ #my-pic {
+  position: absolute;
+  left: 690px;
+  top: 200px;
+  border-radius: 15px;
+  border: 2px solid black;
+	width: 150px;
+  display: inline;
+}
+
+#sport {
+  display: none;
+}
+
+a {
+  color: black;
+}
+
+#experiences {
+  padding-top: 1em;
+}
+
+body, #content, #header {
+  border: none;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-style: oblique;
+}
+
+#personal, #education, #background, #languages, #experiences, #skills, #hobbies, #referens, #strucure {
+  box-shadow: none;
+}
+
+#row1 {
+  margin-bottom: 5em;
+}
+
+h2 {
+  color: black;
+  font-weight: bolder;
+}
