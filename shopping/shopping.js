@@ -1,28 +1,33 @@
 document.addEventListener('DOMContentLoaded', function (event) {
   document.querySelector('button').addEventListener('click', function (event) {
-    document.querySelector('ul').appendChild(list(document.getElementById('item').value));
-
     let inputBox = document.getElementById('item');
-    console.log(inputBox.value);
+    document.querySelector('ul').appendChild(
+        createNewListItem(inputBox.value));
+  });
+
+  document.querySelector('input').addEventListener('keyup', function (event) {
+    if (event.key === 'Enter') {
+      let inputBox = document.getElementById('item');
+      document.querySelector('ul').appendChild(
+          createNewListItem(inputBox.value));
+    }
   });
 });
 
-console.log('my list');
+function createNewListItem(itemName) {
+  let li = document.createElement('li');
 
-function list(itemName) {
-  let elli1 = document.createElement('li');
+  let elSpan = document.createElement('span');
+  elSpan.innerText = itemName;
+  li.appendChild(elSpan);
 
-  let elspan = document.createElement('span');
-  elspan.innerText = itemName;
-  elli1.appendChild(elspan);
+  let elButton = document.createElement('button');
+  elButton.innerText = 'Delete';
 
-  let elbutton = document.createElement('button');
-  elbutton.innerText = 'Delete';
-
-  elbutton.addEventListener('click', function (event) {
+  elButton.addEventListener('click', function (event) {
     console.log('Delete button is clicked');
-    elli1.remove();
+    li.remove();
   });
-  elli1.appendChild(elbutton);
-  return elli1;
+  li.appendChild(elButton);
+  return li;
 }
