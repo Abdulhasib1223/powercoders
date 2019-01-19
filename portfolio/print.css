@@ -1,14 +1,32 @@
+#personal, #education, #background, #languages, #experiences, #skills, #hobbies, #referens, #strucure, #header {
+  box-shadow: none;
+  border: none;
+}
+
+#experiences {
+  margin-top: 10em;
+  
+}
+
+div, body {
+  border: none;
+}
 .somename1, .somename2, .somename3 {
   display: none;
 }
 
- #my-pic {
+ul {
+list-style: none;
+
+}
+
+#my-pic {
   position: absolute;
-  left: 690px;
-  top: 200px;
+  left: 610px;
+  top: 150px;
   border-radius: 15px;
   border: 2px solid black;
-	width: 150px;
+	width: 220px;
   display: inline;
 }
 
@@ -24,18 +42,12 @@ a {
   padding-top: 1em;
 }
 
-body, #content, #header {
-  border: none;
-}
+
 
 h1 {
   color: black;
-  text-align: center;
   font-style: oblique;
-}
-
-#personal, #education, #background, #languages, #experiences, #skills, #hobbies, #referens, #strucure {
-  box-shadow: none;
+  text-align: center;
 }
 
 #row1 {

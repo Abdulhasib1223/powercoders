@@ -1,0 +1,24 @@
+declares a function called `createNewListItem`. This function takes one parameter, called `itemName`.
+
+calls the `createElement` method on the DOM object in the global `document` variable. It passes a single string parameter,
+`li`, to the method, creating a new `li` element in the DOM. This element is not attached to any other element.
+ The new element is returned and saved in to the constant variable called `listItem`.
+
+`document`a global defined variable that contains the DOM.
+
+àddEventListener` a calling method provided by the browser and viewed in DOM that calls connects whatever exists in the DOM that matches the HTML selector.
+
+`Function()`Anonymous function that we declare without the need to the need name it cuz it`s more practical.
+
+`QuerySelector`method we can call that looks for first element in DOM that matches the CSS selector.
+
+the elements that it returns is an object. that listens to 1 perimeter or more.
+
+`let inputValue=inputBox`using java script property to access HTML element.
+
+`let li=createNewListenrer(input value)` declare a parameter and give it value.
+
+`const inputBox = document.getElementById('item');
+
+ ` declare an object with an unchangeable value and give it a name as inputBox.
+
