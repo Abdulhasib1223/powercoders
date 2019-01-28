@@ -1,0 +1,41 @@
+body #1 button::before {
+  background-image: url('shopping_cart.png');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+}
+
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li button::before {
+  background-image: url('delete_button.jpeg');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+}
+
+h1 {
+  color: green;
+  background-color: burlywood;
+  border: 1px solid darkgreen;
+  border-radius: 10px;
+  margin: 10px auto;
+  text-align: center;
+  width: 250px;
+}
+
+
+li {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  width: 150px;
+}
+
