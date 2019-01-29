@@ -60,7 +60,11 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', function () {
     domContentLoaded();
   })
+} else {
+  domContentLoaded();
 }
+
+
 /**
  * Creates and returns an 'li' elements for inclusion in the shopping list.
  * The li element that is returned has the structure
@@ -70,8 +74,6 @@ if (document.readyState === 'loading') {
  * @param {string} itemName name of the item to add to the list
  * @returns {HTMLElement} li element
  */
-
-
 function createNewListItem(itemName) {
   const li = document.createElement('li');
 
