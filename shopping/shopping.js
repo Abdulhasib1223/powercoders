@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function (event) {
+function domContentLoaded() {
   /** Widget that the user types on item in to. */
   const inputBox = document.getElementById('item');
   const shoppingList = document.querySelector('ul');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   addItemButton.addEventListener('click', function (event) {
     const trimmedValue = inputBox.value.trim();
 
-    shoppingList.appendChild(createNewListItem(inputBox.value.trim()));
+    shoppingList.appendChild(createNewListItem(trimmedValue));
     inputBox.value = '';
     inputBox.focus();
     addItemButton.disabled = true;
@@ -53,8 +53,14 @@ document.addEventListener('DOMContentLoaded', function (event) {
   addItemButton.disabled = true;
   btn.disabled = true;
 
-});
+}
 
+if (document.readyState === 'loading') {
+  //dom content loaded has not fired yet.
+  document.addEventListener('DOMContentLoaded', function () {
+    domContentLoaded();
+  })
+}
 /**
  * Creates and returns an 'li' elements for inclusion in the shopping list.
  * The li element that is returned has the structure
