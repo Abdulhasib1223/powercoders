@@ -1,4 +1,4 @@
-body #1 button::before {
+body #content button::before {
   background-image: url('shopping_cart.png');
   background-size: 20px 20px;
   display: inline-block;
@@ -38,4 +38,3 @@ li {
   grid-template-columns: 6fr 1fr;
   width: 150px;
 }
-
