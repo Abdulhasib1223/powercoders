@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b932a51e-6a2b-499f-80ba-2fee3a4611cb" name="Default Changelist" comment="applying some tricks on shopping list &#10;adding and removing button">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shopping.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/delete_button.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dock.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/large.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medium.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shopping.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shopping_cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    <list default="true" id="b932a51e-6a2b-499f-80ba-2fee3a4611cb" name="Default Changelist" comment="split in to tow files">
+      <change afterPath="$PROJECT_DIR$/shopping-list-item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/DOM/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/DOM/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/hide_show_ingredients/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/hide_show_ingredients/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="171">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -47,20 +35,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
+            <state relative-caret-position="596">
               <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shopping.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="n#ShoppingListItem#0" />
-              </folding>
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopping-list-item.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -71,6 +65,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -91,6 +92,8 @@
       <find>butt</find>
       <find>key</find>
       <find>add</find>
+      <find>eve</find>
+      <find>class</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,9 +105,10 @@
         <option value="$PROJECT_DIR$/dock.txt" />
         <option value="$PROJECT_DIR$/medium.css" />
         <option value="$PROJECT_DIR$/large.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/shopping-list-item.js" />
         <option value="$PROJECT_DIR$/shopping.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -183,7 +187,7 @@
       <workItem from="1547799148037" duration="8569000" />
       <workItem from="1548665305148" duration="19103000" />
       <workItem from="1548826651508" duration="409000" />
-      <workItem from="1549274378791" duration="2238000" />
+      <workItem from="1549274378791" duration="3672000" />
     </task>
     <task id="LOCAL-00001" summary="Creating shopping list with css and js files">
       <created>1546853661948</created>
@@ -255,17 +259,24 @@
       <option name="project" value="LOCAL" />
       <updated>1548776658300</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Using new style classes and replacing the current constructor.">
+      <created>1549276952519</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1549276952519</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100161000" />
+    <option name="totallyTimeSpent" value="101595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="2" width="1280" height="796" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4904552" visible="true" weight="0.13264495" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4904552" visible="true" weight="0.13264495" />
       <window_info id="Structure" order="1" sideWeight="0.507365" side_tool="true" weight="0.13264495" />
       <window_info id="Favorites" order="2" sideWeight="0.5095448" side_tool="true" weight="0.13264495" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,7 +288,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32892805" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32892805" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -295,7 +306,8 @@
     <MESSAGE value="loading the website faster to make it easier for user" />
     <MESSAGE value="applying some tricks on shopping list &#10;adding and removing button" />
     <MESSAGE value="adding a quantity box to make the app more practical" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding a quantity box to make the app more practical" />
+    <MESSAGE value="Using new style classes and replacing the current constructor." />
+    <option name="LAST_COMMIT_MESSAGE" value="Using new style classes and replacing the current constructor." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../portfolio/CV.html">
@@ -325,30 +337,34 @@
     <entry file="file://$PROJECT_DIR$/shopping_cart.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/large.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-list-item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
+        <state relative-caret-position="596">
           <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/large.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="n#ShoppingListItem#0" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
