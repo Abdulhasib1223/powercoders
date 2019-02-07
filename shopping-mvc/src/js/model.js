@@ -16,7 +16,8 @@ class Model {
 
     this.view_.update();
   }
-  get items () {
+
+  get items() {
     return this.items_.slice();
   }
 
@@ -26,6 +27,24 @@ class Model {
    */
   append(item) {
     this.items_.push(item);
+    this.view_.update();
+  }
+
+  /**
+   * Delete the i'th item from the list.
+   *
+   * @param i {number}
+   */
+  delete(i) {
+    this.items_.splice(i, 1);
+    this.view_.update();
+  }
+
+  /**
+   * Clear the shopping list from all items.
+   */
+  clearList() {
+    this.items_ = [];
     this.view_.update();
   }
 }

@@ -34,10 +34,6 @@ class ShoppingListItem {
 
     const elButton = document.createElement('button');
     elButton.innerText = '  Delete';
-    elButton.addEventListener('click', function () {
-      console.log('Delete button is clicked');
-      listItem.remove();
-    });
     listItem.appendChild(elButton);
     return listItem;
   }
