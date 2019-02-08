@@ -40,7 +40,7 @@ class View {
     while (this.shoppingList_.firstChild) {
       this.shoppingList_.firstChild.remove();
     }
-
+   
     for (let i = 0; i < this.model_.items.length; i++) {
       const item = this.model_.items[i];
       const listItem = item.toListItem();
